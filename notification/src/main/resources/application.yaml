@@ -1,7 +1,17 @@
 spring:
   application:
     name: notification
-#Rabbitmq Config
+  mail:
+    host: localhost
+    port: 1025
+    properties:
+      mail:
+        smtp:
+          auth: false
+          starttls:
+            enable: false
+            required: flase
+  #Rabbitmq Config
   rabbitmq:
     host: localhost
     username: ${RABBITMQ_DEFAULT_USER}
