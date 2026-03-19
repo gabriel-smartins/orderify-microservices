@@ -1,7 +1,7 @@
-package com.example.orderify.notification.entity;
+package br.com.orderify.notification.entity;
 
 
-import com.example.orderify.notification.entity.enums.Status;
+import br.com.orderify.notification.entity.enums.Status;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;
 import lombok.Data;

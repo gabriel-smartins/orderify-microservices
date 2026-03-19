@@ -1,4 +1,4 @@
-package com.example.orderify.notification.entity;
+package br.com.orderify.notification.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -9,9 +9,9 @@ import java.util.UUID;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Product {
+public class OrderItem {
 
     private UUID id = UUID.randomUUID();
-    private String name;
-    private Double price;
+    private Product product;
+    private Integer quantity;
 }

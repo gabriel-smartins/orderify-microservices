@@ -1,4 +1,4 @@
-package com.example.orderify.notification;
+package br.com.orderify.notification;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

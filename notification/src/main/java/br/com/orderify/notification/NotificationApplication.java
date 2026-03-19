@@ -1,4 +1,4 @@
-package com.example.orderify.notification;
+package br.com.orderify.notification;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
