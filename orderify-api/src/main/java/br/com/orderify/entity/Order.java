@@ -18,10 +18,10 @@ public class Order {
 
     private UUID id = UUID.randomUUID();
     private String customer;
-    private List<OrderItem> orderItems = new ArrayList<>();
+    private List<OrderItem> items = new ArrayList<>();
     private Double totalValue;
     private String notificationEmail;
-    private Status status;
+    private Status status = Status.ON_PROCESSING;
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
-    private LocalDateTime dateHour;
+    private LocalDateTime dateHour = LocalDateTime.now() ;
 }
