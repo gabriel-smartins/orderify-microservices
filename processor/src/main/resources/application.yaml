@@ -9,3 +9,15 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
+  rabbitmq:
+    host: localhost
+    username: ${RABBITMQ_DEFAULT_USER}
+    password: ${RABBITMQ_DEFAULT_PASS}
+    port: 5672
+
+#Rabbitmq Custom Config
+rabbitmq:
+  exchange:
+    name: orders.v1.order-created
+  queue:
+    name: orders.v1.order-created.generate-processor
