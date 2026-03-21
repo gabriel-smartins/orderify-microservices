@@ -23,5 +23,5 @@ public class OrderItem {
     private Integer quantity;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    private Order order;
+    private Order orders;
 }
