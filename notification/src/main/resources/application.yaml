@@ -30,5 +30,9 @@ spring:
 rabbitmq:
   exchange:
     name: orders.v1.order-created
+    dlx:
+      name: orders.v1.order-created.dlx
   queue:
     name: orders.v1.order-created.generate-notification
+    dlq:
+      name: orders.v1.order-created.generate-notification.dlq
