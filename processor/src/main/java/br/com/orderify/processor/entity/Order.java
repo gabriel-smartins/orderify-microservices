@@ -25,7 +25,7 @@ public class Order {
 
     private String customer;
 
-    @OneToMany(mappedBy = "orders")
+    @OneToMany(mappedBy = "order")
     private List<OrderItem> items = new ArrayList<>();
 
     @Column(name = "total_value")

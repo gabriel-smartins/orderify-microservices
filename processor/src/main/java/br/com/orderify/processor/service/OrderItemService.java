@@ -23,7 +23,7 @@ public class OrderItemService {
 
     public void updatedOrderItem(List<OrderItem> orderItems, Order order) {
         orderItems.forEach(item -> {
-            item.setOrders(order);
+            item.setOrder(order);
             this.save(item);
         });
     }
