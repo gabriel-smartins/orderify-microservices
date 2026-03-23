@@ -17,7 +17,14 @@ spring:
     username: ${RABBITMQ_DEFAULT_USER}
     password: ${RABBITMQ_DEFAULT_PASS}
     port: 5672
-
+    listener:
+      simple:
+        default-requeue-rejected: false
+        retry:
+          enabled: true
+          max-attempts: 3
+          initial-interval: 5s
+          multiplier: 2
 
 #Rabbitmq Custom Config
 rabbitmq:
